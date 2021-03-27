@@ -2,6 +2,7 @@ package hitoriaDeUsuario.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -15,5 +16,5 @@ import org.junit.runner.RunWith;
         features = "src/test/java/hitoriaDeUsuario/feature/Ebay.feature"
         ,tags = {"@test_Prueba_web"}
 )
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests{
 }
