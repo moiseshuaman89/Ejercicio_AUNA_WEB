@@ -1,11 +1,11 @@
 package hitoriaDeUsuario.runner;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+@RunWith(RunnerPersonalizado.class)
 @CucumberOptions(
         plugin = {
                 "pretty",

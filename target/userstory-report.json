@@ -1,0 +1,125 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3988456200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MasterHooks.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Escojer 5 Gorras de la Marca Adidas de talla \"S\" en EBAY",
+        "description": "",
+        "id": "demuestra-tu-talento-automatizador;escojer-5-gorras-de-la-marca-adidas-de-talla-\"s\"-en-ebay;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8683644600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Ebay se encuentra abierto",
+            "match": {
+              "location": "Ebay_steps.ebaySeEncuentraAbierto()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14984060000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "busco el articulo \"GORRA\" y doy clic en el boton Buscar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GORRA",
+                  "offset": 19
+                }
+              ],
+              "location": "Ebay_steps.buscoElArticuloYDoyClicEnElBotonBuscar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "line": 7,
+            "name": "filtro por el tipo de marca \"ADIDAS\" del articulo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADIDAS",
+                  "offset": 29
+                }
+              ],
+              "location": "Ebay_steps.filtroPorElTipoDeMarcaDelArticulo(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 8,
+            "name": "elegir el tamaño \"S\" del articulo",
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "line": 9,
+            "name": "imprimo el resultado de la busqueda del articulo",
+            "keyword": "And "
+          },
+          {
+            "line": 10,
+            "name": "ordenamos los articulos por Precio Descendente",
+            "keyword": "And "
+          },
+          {
+            "line": 11,
+            "name": "elejimos los \"5\" primeros productos con sus precios",
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "line": 12,
+            "name": "ordenamos los productos por Nombre ascendente",
+            "keyword": "And "
+          },
+          {
+            "line": 13,
+            "name": "ordenamos los productos por Precio descendente",
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test_Prueba_web"
+          }
+        ]
+      }
+    ],
+    "name": "Demuestra tu Talento Automatizador",
+    "description": "",
+    "id": "demuestra-tu-talento-automatizador",
+    "keyword": "Feature",
+    "uri": "src/test/java/hitoriaDeUsuario/feature/Ebay.feature"
+  }
+]
